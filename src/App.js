@@ -1,11 +1,18 @@
 import React from 'react'
+import Navbar from "./components/Navbar/Navbar.js";
+import Home from "./components/Home/Home.js";
+import About from "./components/About/About.js";
+import Service from "./components/Service/Service.js";
 
 const App = () => {
   return (
-    <h1>
-      hello react its me thiru</h1>
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <Service />
+    </>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
