@@ -135,7 +135,7 @@ const Testimonial = () => {
     setShowMorePost((prev) => prev + 3);
   };
   return (
-    <div className="container testimonial-section">
+    <div className="container testimonial-section" id="testimonial">
       <div className="section_title">
         <h5>Testimonial</h5>
         <samp className="line"></samp>

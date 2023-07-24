@@ -7,6 +7,14 @@
     top: 0;
     text-align: center;
     justify-content: right;
+    position: sticky;
+        z-index: 1;
+    }
+    
+    /* navbar scrool changed color */
+    
+    .navbar-scroll-color {
+        background-color: #38004c;
 }
 
 .navbar-main ul {
@@ -19,10 +27,16 @@
     margin-right: 50px;
     color: white;
     cursor: pointer;
+    padding-top: 7px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    
 }
 
 .navbar-main ul li:hover {
     color: yellow;
+}
+.nav-item .active {
+
+    color: yellow;
+
 }
