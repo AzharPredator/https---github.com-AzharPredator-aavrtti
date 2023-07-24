@@ -1,0 +1,60 @@
+.joinus {
+    height: 300px;
+    color: white;
+    background-color: rgb(208, 19, 164, 0.571);
+    position: relative;
+    margin-top: 50px;
+}
+
+.joinus:before {
+    content: "";
+    background: url(../../Image/Hiring-Chairs-scaled.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.joinus_title h5 {
+    text-align: center;
+    padding: 20px;
+    color: chartreuse;
+    font-size: 20px;
+}
+
+.jionus-form input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 0px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.joinus_button p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.joinus_button p:hover {
+    border: 1px solid greenyellow;
+    background-color: #fff;
+    color: green;
+    transition-duration: 2s;
+}

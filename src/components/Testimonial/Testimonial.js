@@ -142,8 +142,10 @@ const Testimonial = () => {
       </div>
       <div className="row">
         {data.slice(0, showMorePost).map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-            <div className="content-card">
+          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
+            <div
+              className={index == 0 ? "marked-content-card" : "content-card"}
+            >
               <img src={item.img} alt="image"></img>
               <p>{item.content}</p>
               <p>

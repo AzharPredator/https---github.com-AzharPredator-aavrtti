@@ -14,7 +14,7 @@ function Navbar() {
         <li className="nav-item">Testimonial</li>
         <li className="nav-item">Feedback</li>
         <li className="nav-item">Contact</li>
-        <li className="nav-item">Subscription</li>
+        <li className="nav-item">Join Us</li>
       </ul>
     </nav>
   );
