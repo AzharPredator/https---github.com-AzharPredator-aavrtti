@@ -44,10 +44,10 @@ const Footer = () => {
               <h6 style={{ color: "white", marginTop: "20px" }}>Services</h6>
               <div className="footer-item">
                 <li>Product Sort</li>
-                <li>Product Sort</li>
-                <li>Product Sort</li>
-                <li>Product Sort</li>
-                <li>Product Sort</li>
+                <li>Media Marketing</li>
+                <li>Innovation</li>
+                <li>Technology</li>
+                <li>Environment</li>
               </div>
             </div>
           </div>
@@ -58,11 +58,11 @@ const Footer = () => {
                   Customer Care
                 </h6>
                 <div className="footer-item">
-                  <li>Product Sort</li>
-                  <li>Product Sort</li>
-                  <li>Product Sort</li>
-                  <li>Product Sort</li>
-                  <li>Product Sort</li>
+                  <li>Log in</li>
+                  <li>My Account</li>
+                  <li>Wish List</li>
+                  <li>FAQ</li>
+                  <li>Contact Us</li>
                 </div>
               </div>
             </div>

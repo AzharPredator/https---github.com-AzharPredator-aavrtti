@@ -155,12 +155,12 @@ const Testimonial = () => {
             </div>
           </div>
         ))}
-        {showMorePost >= data.length ? null : (
-          <span className="load-more-button" onClick={loadmore}>
-            Load More
-          </span>
-        )}
       </div>
+      {showMorePost >= data.length ? null : (
+        <span className="load-more-button" onClick={loadmore}>
+          Load More
+        </span>
+      )}
     </div>
   );
 };

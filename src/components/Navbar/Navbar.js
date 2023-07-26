@@ -62,8 +62,14 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">
-          <Link to="info" spy={true} smooth={true} offset={-100} duration={100}>
-            Inof{" "}
+          <Link
+            to="video"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            Video
           </Link>
         </li>
 
@@ -117,7 +123,7 @@ const Navbar = () => {
             offset={-100}
             duration={100}
           >
-            Join Us{" "}
+            Join Us
           </Link>
         </li>
       </ul>

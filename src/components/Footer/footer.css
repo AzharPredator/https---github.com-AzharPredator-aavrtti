@@ -2,6 +2,7 @@
     height: auto;
     margin: 0px;
     background-color: #030749;
+    margin-top: 60px;
 }
 
 .footer-about-section {
@@ -17,11 +18,52 @@
 }
 
 .social-icons p {
+    height: 40px;
+        width: 40px;
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     margin: 3px;
 }
 
+.social-icons p:hover {
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-item li {
     color: white;
     list-style-type: none;
     padding-top: 10px;
+}
+li {
+    --border-color: white;
+    --border-color2: rgb(255, 165, 0);
+    --border-width: 2px;
+    --bottom-distance: 0px;
+    display: block;
+    background-image: linear-gradient(var(--border-color), var(--border-color2));
+    background-size: 0% var(--border-width);
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+}
+
+.footer-item li {
+    background-position: 0 calc(100% - var(--bottom-distance));
+    color: white;
+    width: fit-content;
+}
+
+.footer-item li:hover {
+    background-size: 100% var(--border-width);
+    cursor: pointer;
+}
+
+.footer-service {
+    padding-bottom: 40px;
 }

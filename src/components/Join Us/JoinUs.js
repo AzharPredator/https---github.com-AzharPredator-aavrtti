@@ -16,7 +16,7 @@ const JoinUs = () => {
             </div>
             <div className="joinus_button">
               <p>
-                Join Us_
+                Join Us .
                 <FaUserPlus />
               </p>
             </div>

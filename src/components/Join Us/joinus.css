@@ -50,6 +50,7 @@
     font-size: 20px;
     margin-top: 20px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .joinus_button p:hover {
@@ -57,4 +58,5 @@
     background-color: #fff;
     color: green;
     transition-duration: 2s;
+    cursor: pointer;
 }
