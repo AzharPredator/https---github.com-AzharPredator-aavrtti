@@ -1,6 +1,7 @@
 import React from "react";
 import "./service.css";
 import { FcOk } from "react-icons/fc";
+import Zoom from "react-reveal/Zoom";
 
 const Service = () => {
   const servicedata = [
@@ -62,62 +63,64 @@ const Service = () => {
     },
   ];
 
-const colors = [
-  "#0000FF",
-  "#FFAC1C",
-  "#EE4B2B",
-  "#AA336A",
-  "#6082B6",
-  "#FFBF00",
-  "#6495ED",
-  "#EEDC82",
-];
+  const colors = [
+    "#0000FF",
+    "#FFAC1C",
+    "#EE4B2B",
+    "#AA336A",
+    "#6082B6",
+    "#FFBF00",
+    "#6495ED",
+    "#EEDC82",
+  ];
 
-return (
-  <div className="container service-section" id="service">
-    {/* Section title */}
-    <div className="section_title">
-      <h5>Services</h5>
-      <samp className="line"></samp>
-    </div>
-    <div className="row">
-      {servicedata.map((item, index) => (
-        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={index}>
-          <div className="services">
-            <span
-              className="service-number"
-              style={{ backgroundColor: colors[index] }}
-            >
-              <p>{item.id}</p>
-            </span>
-            <div className="list-of-service">
-              <p>
-                <FcOk size={20} style={{ margin: "5px" }} />
-                {item.service1}
-              </p>
-              <samp className="service_item_underline"></samp>
-              <p>
-                <FcOk size={20} style={{ margin: "5px" }} />
-                {item.service2}
-              </p>
-              <samp className="service_item_underline"></samp>
-              <p>
-                <FcOk size={20} style={{ margin: "5px" }} />
-                {item.service3}
-              </p>
-              <samp className="service_item_underline"></samp>
-              <p>
-                <FcOk size={20} style={{ margin: "5px" }} />
-                {item.service4}
-              </p>
+  return (
+    <div className="container service-section" id="service">
+      {/* Section title */}
+      <div className="section_title">
+        <h5>Services</h5>
+        <samp className="line"></samp>
+      </div>
+      <div className="row">
+        {servicedata.map((item, index) => (
+          <Zoom top>
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={index}>
+              <div className="services">
+                <span
+                  className="service-number"
+                  style={{ backgroundColor: colors[index] }}
+                >
+                  <p>{item.id}</p>
+                </span>
+                <div className="list-of-service">
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} />
+                    {item.service1}
+                  </p>
+                  <samp className="service_item_underline"></samp>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} />
+                    {item.service2}
+                  </p>
+                  <samp className="service_item_underline"></samp>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} />
+                    {item.service3}
+                  </p>
+                  <samp className="service_item_underline"></samp>
+                  <p>
+                    <FcOk size={20} style={{ margin: "5px" }} />
+                    {item.service4}
+                  </p>
+                </div>
+                <div />
+              </div>
             </div>
-            <div />
-          </div>
-        </div>
-      ))}
+          </Zoom>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Service;

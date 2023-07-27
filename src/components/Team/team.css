@@ -3,6 +3,9 @@
     margin-top: 30px;
 }
 
+#dark .team-members {
+    color: white;
+}
 @media(max-width:1000px) {
     .team-members {
         height: auto;
@@ -41,6 +44,14 @@
     cursor: pointer;
 }
 
+#dark .team-members-item {
+    background-color: #38004c;
+    color: white;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+}
 .team-members-item:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
@@ -58,6 +69,14 @@
 
 }
 
+#dark .line-for-teammembrs {
+    width: 170px;
+    display: block;
+    height: 1px;
+    margin: 2px auto;
+    background-color: rgb(226, 226, 43);
+
+}
 .team-social-icons {
     display: flex;
     justify-content: center;

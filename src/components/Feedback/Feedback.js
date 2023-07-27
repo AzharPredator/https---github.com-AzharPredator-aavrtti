@@ -3,6 +3,7 @@ import "./feedback.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Zoom from "react-reveal/Zoom";
 
 const Feedback = () => {
   const data = [
@@ -126,18 +127,20 @@ const Feedback = () => {
       <div className="feedback-slide">
         <Slider {...settings}>
           {data.map((item, index) => (
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-              <div className="card content-slider" key={index}>
-                <img
-                  src={item.img}
-                  alt="slider image"
-                  className="center-image"
-                />
-                <p>{item.content}</p>
-                <h4>{item.name}</h4>
-                <p>{item.position}</p>
+            <Zoom>
+              <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="card content-slider" key={index}>
+                  <img
+                    src={item.img}
+                    alt="slider image"
+                    className="center-image"
+                  />
+                  <p>{item.content}</p>
+                  <h4>{item.name}</h4>
+                  <p>{item.position}</p>
+                </div>
               </div>
-            </div>
+            </Zoom>
           ))}
         </Slider>
       </div>

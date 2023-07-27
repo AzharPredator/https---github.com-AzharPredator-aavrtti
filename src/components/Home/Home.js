@@ -2,10 +2,27 @@ import React from "react";
 import "./home.css";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
+import {
+  GiNightSky,
+  GiBoomerangSun,
+  GiField,
+  GiMountains,
+} from "react-icons/gi";
 
-const Home = () => {
+const Home = ({ theme, handleChangeTheme }) => {
   return (
     <div className="container-fluid home" id="home">
+      <div className="theme-change" onClick={() => handleChangeTheme()}>
+        {theme === "light" ? (
+          <p>
+            <GiNightSky size={40} />
+          </p>
+        ) : (
+          <p>
+            <GiField size={40} />
+          </p>
+        )}
+      </div>
       <Fade left big>
         <div className="container home-content">
           <h1>

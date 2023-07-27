@@ -1,6 +1,7 @@
 import React from "react";
 import "./team.css";
 import { FaTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import Rotate from "react-reveal/Rotate";
 
 const Team = () => {
   const data = [
@@ -55,27 +56,29 @@ const Team = () => {
       </div>
       <div className="row">
         {data.map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-            <div className="card team-members-item">
-              <img src={item.img} alt="team image" />
-              <div className="team-info">
-                <h6>{item.name}</h6>
-                <p>{item.content}</p>
-              </div>
-              <span className="line-for-teammembrs"></span>
-              <div className="team-social-icons">
-                <p>
-                  <FaFacebookF size={25} />
-                </p>
-                <p>
-                  <FaTwitter size={25} />
-                </p>
-                <p>
-                  <FaLinkedinIn size={25} />
-                </p>
+          <Rotate bottom right>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div className="card team-members-item">
+                <img src={item.img} alt="team image" />
+                <div className="team-info">
+                  <h6>{item.name}</h6>
+                  <p>{item.content}</p>
+                </div>
+                <span className="line-for-teammembrs"></span>
+                <div className="team-social-icons">
+                  <p>
+                    <FaFacebookF size={25} />
+                  </p>
+                  <p>
+                    <FaTwitter size={25} />
+                  </p>
+                  <p>
+                    <FaLinkedinIn size={25} />
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </Rotate>
         ))}
       </div>
     </div>

@@ -3,6 +3,10 @@
 
 }
 
+#dark .testimonial-section {
+    color: white;
+
+}
 @media(max-width:1000px) {
     .testimonial-section {
         margin-top: 25px;
@@ -38,6 +42,25 @@
 
 }
 
+#dark .content-card {
+    background-color: #38004c;
+    color: white;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+}
+
+#dark .content-card:hover {
+    background-color: #38004c;
+    color: white;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+    border-bottom: 2px solid yellowgreen;
+    transition-duration: 1s;
+}
 .content-card:hover {
     background-color: brown;
     color: white;
@@ -54,6 +77,14 @@
     margin-top: 50px;
 }
 
+#dark .marked-content-card {
+    background-color: #0f16ca;
+    color: white;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+}
 .marked-content-card:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);

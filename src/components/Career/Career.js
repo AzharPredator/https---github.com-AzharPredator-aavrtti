@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./career.css";
 import DataInof from "./DataInof";
 import Pagination from "../Pagination/Pagination";
+import Fade from "react-reveal/Fade";
 
 const Career = () => {
   const url = "https://jsonplaceholder.typicode.com/posts";
@@ -44,17 +45,21 @@ const Career = () => {
         <h5>Career</h5>
         <span className="line"></span>
       </div>
-      <div className="row">
-        {data &&
-          currentPageData.map((item, index) => (
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-              <DataInof key={index} {...item} />
-            </div>
-          ))}
-      </div>
-      <div className="pagination-details">
-        <Pagination pageCount={pageCount} handlePageClick={handlePageClick} />
-      </div>
+      <Fade left>
+        <div className="row">
+          {data &&
+            currentPageData.map((item, index) => (
+              <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <DataInof key={index} {...item} />
+              </div>
+            ))}
+        </div>
+      </Fade>
+      <Fade right big>
+        <div className="pagination-details">
+          <Pagination pageCount={pageCount} handlePageClick={handlePageClick} />
+        </div>
+      </Fade>
     </div>
   );
 };

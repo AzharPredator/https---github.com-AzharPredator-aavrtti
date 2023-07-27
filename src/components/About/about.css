@@ -2,6 +2,14 @@
     height: 900px;
 }
 
+#dark .about-section {
+    color: white;
+
+}
+
+#dark .about-details {
+    background-color: #38004c;
+}
 @media(max-width:1000px) {
     .about-section {
         height: auto;
@@ -42,6 +50,14 @@
     cursor: pointer;
 }
 
+#dark .card-design {
+    background-color: #38004c;
+    margin-top: 10px;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+}
 .card-design::after {
     display: block;
     content: "";
