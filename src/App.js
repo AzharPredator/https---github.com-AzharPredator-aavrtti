@@ -11,6 +11,7 @@ import JoinUs from "./components/Join Us/JoinUs.js";
 import Footer from "./components/Footer/Footer.js";
 import Team from "./components/Team/Team.js";
 import Feedback from "./components/Feedback/Feedback.js";
+import Contact from "./components/Contact/Contact.js";
 
 import "./App.css";
 import ScrollToTop from "react-scroll-to-top";
@@ -25,7 +26,7 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{ theme, handleChangeTheme }}>
       <Navbar />
-      <NavbarMobileView />
+      <NavbarMobileView theme={theme} handleChangeTheme={handleChangeTheme} />
       <Home theme={theme} handleChangeTheme={handleChangeTheme} />
       <div className="main-theme-compo" id={theme}>
         <About />
@@ -35,9 +36,11 @@ const App = () => {
         <Team />
         <Testimonial />
         <Feedback />
+        <Contact />
       </div>
 
       <JoinUs />
+
       <Footer />
 
       <ScrollToTop
